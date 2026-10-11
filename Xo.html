@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Ayano oji</title>
+  <style>
+    body {
+      background-color: #ffe6ee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #000000;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #000000;
+      transform: scale(1.05);
+    }
+
+    #noBtn {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Kuy -->
+  <img src="https://th.bing.com/th/id/OIP.o8G_vp0_sUr0rSwyTTftPgHaF9?w=500&h=402&rs=1&pid=ImgDetMain" alt="cute">
+
+  <h1>พี่ครีมขอRobuxหน่อย</h1>
+
+  <div class="buttons">
+    <button onclick="alert(':P')">ได้</button>
+    <button id="noBtn">ไม่</button>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById('noBtn');
+    noBtn.addEventListener('mouseover', () => {
+      const i = Math.floor(Math.random() * window.innerWidth - 100);
+      const j = Math.floor(Math.random() * window.innerHeight - 50);
+      noBtn.style.position = "absolute";
+      noBtn.style.left = i + "px";
+      noBtn.style.top = j + "px";
+    });
+  </script>
+
+</body>
+</html>
